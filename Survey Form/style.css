@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: auto;
+    margin: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 50rem;
+    border: 1px solid white;
+}
+
+.formFlow {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+input {
+    margin-top: 1rem;
+    padding: 0.4rem 0px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    text-indent: 0.5rem;
+    outline: 1px solid #999;
+}
+
+input[type="radio"] {
+    outline: none;
+    border: none;
+}
+
+/*customerName*/
+.customerName {
+    height: auto;
+    margin-top: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.inputName {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem
+}
+
+.comment {
+    font-size: 0.7rem;
+    margin-top: 0.4rem;
+    padding: 0.1rem;
+}
+
+/*address*/
+.address {
+    height: auto;
+    margin-top: 2rem;
+}
+
+.streetAddress input {
+    width: 100%;
+}
+
+.notStreets {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.city,
+.state {
+    margin-right: 2rem;
+    /*replace gap 2 rem*/
+}
+
+select {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    padding: 0.4rem 0px;
+    text-indent: 0.5rem;
+    border: none;
+    outline: 1px solid #999;
+    border-radius: 7px;
+    min-width: 86%;
+    color: #999;
+}
+
+select:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+/*contact*/
+.contact {
+    height: auto;
+    margin-top: 2rem;
+}
+
+.rowContact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/*personalDetails*/
+.personalDetails {
+    height: auto;
+    margin-top: 2rem;
+}
+
+/*ratings*/
+.ratings {
+    height: auto;
+    margin-top: 2rem;
+}
+
+.ratingChoices {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.r1,
+.r2,
+.r3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+/*submit*/
+.submit {
+    height: auto;
+    margin: 2rem 0px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn button {
+    font-size: 2rem;
+    margin: 0px auto;
+    display: block;
+    color: wite;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid white;
+    background-color: #023de3;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px #0000;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}

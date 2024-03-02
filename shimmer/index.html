@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimmer</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script defer src="./shimmer.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <p class="brand">Shimmer</p>
+            <nav>
+                <!--menu in median/large size-->
+                <div class="navbutton showHome"><a href="#" data-key="Home">主页</a></div>
+                <div class="navbutton showCoffee"><a href="#" data-key="Coffee">咖啡</a></div>
+                <div class="navbutton showDessert"><a href="#" data-key="Dessert">甜点</a></div>
+                <div class="navbutton showSnack"><a href="#" data-key="Snack">小食</a></div>
+                <div class="navbutton showAddress"><a href="#" data-key="Address">地址</a></div>
+                <button class="hamburger-menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+            <!--language switch-->
+            <div class="lang"><a href="#">
+                    <span class="fas fa-globe"></span>
+                </a></div>
+            <!--menu in small size-->
+            <div class="menu-content" id="menuContent">
+                <a href="#" class="showHome" data-key="Home">主页</a>
+                <a href="#" class="showCoffee" data-key="Coffee">咖啡</a>
+                <a href="#" class="showDessert" data-key="Dessert">甜点</a>
+                <a href="#" class="showSnack" data-key="Snack">小食</a>
+                <a href="#" class="showAddress" data-key="Address">地址</a>
+            </div>
+        </header>
+        <!--home-->
+        <section class="home">
+            <div class="background_img">
+                <p class="ads" data-key="adsTxt">“沉浸在独特的风味和温暖的氛围中，<br>
+                    让生活的精彩瞬间在这里绽放。<br>
+                    无论是早晨的第一缕阳光还是傍晚的温柔黄昏，<br>
+                    Shimmer总有那么一个时刻，<br>让您的日子更加闪亮。"</p>
+                <p class="home_notion">
+                    -SHIMMER-
+                </p>
+            </div>
+            <div class="bottom">
+                <footer class="home_bottom">
+                    <img class="wechat" src="./pics/wechat.png" />
+                    <a class="phone" href="tel:1234567890">+86 1234567890</a>
+                </footer>
+            </div>
+        </section>
+        <!--coffee-->
+        <section class="coffee">
+            <a class="coffee_c1" href="#">
+                <div class="coffee_card"><img src="./pics/espresso.jpg">
+                    <p data-key="espresso">意式浓缩: 18元</p>
+                </div>
+            </a>
+            <a class="coffee_c2" href="#">
+                <div class="coffee_card"><img src="./pics/latte.jpg">
+                    <p data-key="latte">拿铁: 22元</p>
+                </div>
+            </a>
+            <a class="coffee_c3" href="#">
+                <div class="coffee_card"><img src="./pics/cappuccino.jpg">
+                    <p data-key="cappuccino">卡布奇诺: 20元</p>
+                </div>
+            </a>
+            <a class="coffee_c4" href="#">
+                <div class="coffee_card"><img src="./pics/americano.jpg">
+                    <p data-key="americano">美式: 15元</p>
+                </div>
+            </a>
+            <a class="coffee_c5" href="#">
+                <div class="coffee_card"><img src="./pics/coldbrew.jpg">
+                    <p data-key="matcha">抹茶: 25元</p>
+                </div>
+            </a>
+            <p class="coming_soon">- MORE COMING SOON -</p>
+        </section>
+        <!--dessert-->
+        <section class="dessert">
+            <a class="dessert_c1" href="#">
+                <div class="dessert_card"><img src="./pics/tiramisu.jpg">
+                    <p data-key="tiramisu">提拉米苏: 20元</p>
+                </div>
+            </a>
+            <a class="dessert_c2" href="#">
+                <div class="dessert_card"><img src="./pics/chocolate_cake.jpg">
+                    <p data-key="chocolate_cake">巧克力蛋糕: 25元</p>
+                </div>
+            </a>
+            <a class="dessert_c3" href="#">
+                <div class="dessert_card"><img src="./pics/strawberry_cake.jpg">
+                    <p data-key="strawberry_cake">草莓蛋糕: 25元</p>
+                </div>
+            </a>
+            <a class="dessert_c4" href="#">
+                <div class="dessert_card"><img src="./pics/macaron.jpg">
+                    <p data-key="macaron">马卡龙: 20元</p>
+                </div>
+            </a>
+            <a class="dessert_c5" href="#">
+                <div class="dessert_card"><img src="./pics/mille_feuille.jpg">
+                    <p data-key="mille_feuille">水果千层: 20元</p>
+                </div>
+            </a>
+            <p class="coming_soon">- MORE COMING SOON -</p>
+        </section>
+        <!--snack-->
+        <section class="snack">
+            <a class="snack_c1" href="#">
+                <div class="snack_card"><img src="./pics/snowTart.jpg">
+                    <p data-key="snowTart">雪花酥: 25元</p>
+                </div>
+            </a>
+            <a class="snack_c2" href="#">
+                <div class="snack_card"><img src="./pics/cookie.jpg">
+                    <p data-key="cookie">曲奇: 15元</p>
+                </div>
+            </a>
+            <a class="snack_c3" href="#">
+                <div class="snack_card"><img src="./pics/spaghetti.jpg">
+                    <p data-key="spaghetti">意面: 25元</p>
+                </div>
+            </a>
+            <a class="snack_c4" href="#">
+                <div class="snack_card"><img src="./pics/sandwich.jpg">
+                    <p data-key="sandwich">三文治: 20元</p>
+                </div>
+            </a>
+            <a class="snack_c5" href="#">
+                <div class="snack_card"><img src="./pics/chips.jpg">
+                    <p data-key="chips">薯条: 20元</p>
+                </div>
+            </a>
+            <p class="coming_soon">- MORE COMING SOON -</p>
+        </section>
+        <!--address-->
+        <section class="address">
+            <a href="https://www.google.com/maps" title="link to the location with google map"><img src="./pics/map.png"
+                    alt="the location of the coffee shop" /></a>
+            <iframe
+                src="https://www.bing.com/maps/configurable?config=https%3A%2F%2Fbingmapsisdk.blob.core.windows.net%2Fisdksamples%2Fconfigmap2.json"
+                style="width:600px;height:400px;" frameborder="0" scrolling="no"></iframe>
+            <div class="address_description">
+                <p data-key="openningTime">营业时间：10:00-21:30</p>
+                <p data-key="location">地址：XX市 XX区 XX路 XXX号</p>
+                <p><span data-key="emailAddr">电邮：</span><a href="mailto:sample@gmail.com">sample@gmail.com</a></p>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="formFlow">
+            <header class="title">
+                <h1>
+                    Survey Form:
+                </h1>
+            </header>
+            <div class="customerName">
+                <h3>Customer Name</h3>
+                <div class="inputName">
+                    <div class="firstName"><input type="text" class="firstName">
+                        <div class="comment">Enter Your First Name</div>
+                    </div>
+                    <div class="lastName">
+                        <input type="text" class="lastName">
+                        <div class="comment">Enter Your Last Name</div>
+                    </div>
+                </div>
+            </div>
+            <div class="address">
+                <h3>Address</h3>
+                <div class="inputAddress">
+                    <div class="streetAddress">
+                        <div class="addressLine1">
+                            <input type="text">
+                            <div class="comment">Street Address</div>
+                        </div>
+                        <div class="addressLine2">
+                            <input type="text">
+                            <div class="comment">Street Address Line 2</div>
+                        </div>
+                    </div>
+                    <div class="notStreets">
+                        <div class="city">
+                            <input type="text">
+                            <div class="comment">City</div>
+                        </div>
+                        <div class="State">
+                            <input type="text">
+                            <div class="comment">State</div>
+                        </div>
+                        <div class="Zip">
+                            <input type="text">
+                            <div class="comment">Zip</div>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <select name="country" required>
+                            <option value="Sample 1">Sample 1</option>
+                            <option value="Sample 2">Sample 2</option>
+                        </select>
+                        <div class="comment">Select Country</div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <div class="rowContact">
+                    <div class="phone">
+                        <input type="text">
+                        <div class="comment">Phone</div>
+                    </div>
+                    <div class="email">
+                        <input type="text">
+                        <div class="comment">Email</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="personalDetails">
+                <h3>Personal Details</h3>
+                <div class="choices">
+                    <div class="male">
+                        <input type="radio" id="male">
+                        <label for="male">Male</label><br>
+                    </div>
+                    <div class="female">
+                        <input type="radio" id="female">
+                        <label for="female">Female</label><br>
+                    </div>
+                    <div class="other">
+                        <input type="radio" id="other">
+                        <label for="other">Other</label><br>
+                    </div>
+                </div>
+            </div>
+            <div class="ratings">
+                <h3>Ratings</h3>
+                <div class="ratingChoices">
+                    <div class="r1">
+                        <p>Rating 1: </p>
+                        <div class="bad">
+                            <input type="radio" id="bad">
+                            <label for="bad">Bad</label>
+                        </div>
+                        <div class="good">
+                            <input type="radio" id="good">
+                            <label for="good">Good</label>
+                        </div>
+                        <div class="excelent">
+                            <input type="radio" id="excelent">
+                            <label for="excelent">Excelent</label>
+                        </div>
+                    </div>
+                    <div class="r2">
+                        <p>Rating 2: </p>
+                        <div class="bad">
+                            <input type="radio" id="bad">
+                            <label for="bad">Bad</label>
+                        </div>
+                        <div class="good">
+                            <input type="radio" id="good">
+                            <label for="good">Good</label>
+                        </div>
+                        <div class="excelent">
+                            <input type="radio" id="excelent">
+                            <label for="excelent">Excelent</label>
+                        </div>
+                    </div>
+                    <div class="r3">
+                        <p>Rating 3: </p>
+                        <div class="bad">
+                            <input type="radio" id="bad">
+                            <label for="bad">Bad</label>
+                        </div>
+                        <div class="good">
+                            <input type="radio" id="good">
+                            <label for="good">Good</label>
+                        </div>
+                        <div class="excelent">
+                            <input type="radio" id="excelent">
+                            <label for="excelent">Excelent</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit">
+                <div class="btn">
+                    <button>Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

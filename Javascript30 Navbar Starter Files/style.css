@@ -1,0 +1,145 @@
+html {
+    box-sizing: border-box
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: inherit
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(242, 242, 229);
+}
+
+.container {
+    width: 90%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0 3rem 0;
+}
+
+.hero {
+    display: none;
+}
+
+.textContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.textContent h1 {
+    width: 90%;
+}
+
+span {
+    color: orange;
+}
+
+.textContent p {
+    color: rgb(137, 137, 137);
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(87, 39, 39);
+    height: 40px;
+    width: 130px;
+}
+
+.rating {
+    padding-top: 1.5rem;
+    color: rgb(137, 137, 137);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    gap: 0.8rem;
+}
+
+footer {
+    padding-top: 5rem;
+    color: rgb(137, 137, 137);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trustedCompanies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.trustedCompanies img {
+    width: 10rem;
+}
+
+@media(min-width:810px) {
+    .menu {
+        display: none;
+    }
+
+    nav {
+        color: rgb(137, 137, 137);
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(137, 137, 137);
+    }
+
+    .login {
+        color: rgb(137, 137, 137);
+        display: flex;
+        align-items: center;
+        gap: 1rem
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .hero {
+        display: inline-block;
+    }
+
+    .hero img {
+        width: auto;
+        height: 20rem;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        justify-content: space-between;
+    }
+
+    .trustedCompanies {
+        width: 80%;
+        justify-content: space-evenly;
+    }
+}

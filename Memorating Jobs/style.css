@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80rem;
+    height: auto;
+}
+
+blockquote,
+h1,
+h2,
+p {
+    color: white;
+}
+
+header {
+    text-align: center;
+    font-size: 1rem;
+    padding: 5rem;
+}
+
+header.h1 {
+    font-size: 1rem;
+}
+
+.portrait {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    color: black;
+    align-items: center;
+}
+
+blockquote {
+    width: 66%;
+    text-align: center;
+    color: black;
+    font-size: 2.8rem;
+}
+
+.portrait img {
+    width: 34%;
+    flex-shrink: 0.3;
+}
+
+footer {
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.memorial {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(169, 169, 169);
+}
