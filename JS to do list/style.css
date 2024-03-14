@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 160px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 15px;
+}
+
+.input {
+    transform: scale(1.2);
+}
+
+button {
+    padding: 3px 15px 3px 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: rgb(164, 164, 164);
+}
+
+ol {
+    padding-top: 30px;
+}
+
+li {
+    width: 80vw;
+}
