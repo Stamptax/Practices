@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    padding-top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stage {
+    margin-top: 50px;
+    width: 90%;
+    min-width: 330px;
+    max-width: 1000px;
+    aspect-ratio: 16 / 9;
+    background-color: rgb(152, 152, 152);
+    border-radius: 10px;
+    position: relative;
+}
+
+/* ======================================== bottons for turning left/ right ======================================== */
+.turnLeft {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.turnLeft:hover {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.turnRight {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.turnRight:hover {
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+/* ======================================== images within the stage ======================================== */
+.img1 {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: bisque;
+    border-radius: 10px;
+}
+
+.img2 {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(183, 243, 224);
+    border-radius: 10px;
+}
+
+.img3 {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(233, 41, 134);
+    border-radius: 10px;
+}
+
+/* ======================================== descriptive text ======================================== */
+
+.description {
+    padding-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+
+@media (min-width:480px) {
+    .container {
+        padding-top: 5%;
+    }
+}
